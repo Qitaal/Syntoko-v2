@@ -1,0 +1,114 @@
+from enum import Enum
+
+FAILED_MSG_INSERT = "Failed to Insert"
+FAILED_MSG_UPDATE = "Failed to Update"
+FAILED_MSG_DELETE = "Failed to Delete"
+FAILED_MSG_UPLOAD = "Failed to Upload"
+FAILED_MSG_NOT_FOUND = "Data not found"
+FAILED_MSG_FILE_NOT_FOUND = "File not found"
+FAILED_MSG_NOT_EXIST = "{0} does not exist"
+FAILED_MSG_ERROR = "Something wrong when get data {0}"
+FAILED_MSG_NOT_ALLOWED = "{0} not allowed"
+FAILED_MSG_USER_FORBIDDEN = "user not allowed"
+FAILED_MSG_NOT_AUTHORIZED = "Not Authorized"
+FAILED_MSG = "Something wrong when {0}"
+FAILED_MSG_MERCHANT_DELETED = "Merchant {0} is deleted"
+
+MSG_200 = "OK"
+MSG_201 = "OK"
+MSG_204 = "OK"
+MSG_400 = "Error Params"
+MSG_404 = "Not Found"
+MSG_405 = "Method Not Allowed"
+MSG_500 = "Internal Server Error"
+
+
+class HTTPResponseCode(Enum):
+    HTTP_200_OK = {"code": 200, "message": MSG_200}
+    HTTP_201_CREATED = {"code": 201, "message": MSG_201}
+    HTTP_204_NO_CONTENT = {"code": 204, "message": MSG_204}
+    HTTP_400_BAD_REQUEST = {"code": 400, "message": MSG_400}
+    HTTP_404_NOT_FOUND = {"code": 404, "message": MSG_404}
+    HTTP_405_METHOD_NOT_ALLOWED = {"code": 405, "message": MSG_405}
+    HTTP_500_INTERNAL_SERVER_ERROR = {"code": 500, "message": MSG_500}
+
+
+LIMIT_CANT_LESS_THAN_1 = "limit values can't less than 1"
+PAGE_CANT_LESS_THAN_1 = "page values can't less than 1"
+ORDER_BY_ERRORS = "orderBy value must be in {0}"
+SORT_BY_ERRORS = "sortBy value must be in asc / desc"
+CANT_ORDER_BY = "Can't order by using {}"
+
+VALUE_ALREADY_EXISTS = "{0} already exists!"
+VALUE_REQUIRED = "{0} required!"
+VALUE_NOT_FOUND = "{0} not found!"
+
+DUPLICATE_ENTRY = "Duplicate Entry"
+
+CANT_LESS_THAN_0 = "{0} values can't less than 0"
+
+CONSUMER_TASK_SUCCESS = "TASK_SUCCESS"
+CONSUMER_TASK_FAILED = "{0}_FAILED"
+
+CAMPAIGN_FLASH_SALE = "FLASH_SALE"
+CAMPAIGN_NORMAL = "NORMAL"
+CAMPAIGN_PRE_LAUNCH = "PRE_ORDER"
+
+EVENT_TYPE_IS_REQUIRED = "Event type is required"
+
+GWS_DATETIME_FORMAT = "%Y-%m-%d %H:%M:%S"
+
+GWS_DATE_FORMAT = "%Y-%m-%d"
+
+JAKARTA_TIMEZONE = "Asia/Jakarta"
+
+CATEGORY_PRIMARY_KEY = "category pk"
+
+
+CACHE_PRODUCT_KEY = "PDP-{0}"
+CACHE_PRODUCTS_KEY = "PRODUCTS"
+
+REDIS_GET = "REDIS:GET"
+REDIS_SET = "REDIS:SET"
+REDIS_DELETE = "REDIS:DEL"
+
+GET_FROM_REDIS = "{0}FromRedis"
+SAVE_INTO_REDIS = "{0}IntoRedis"
+REMOVE_FROM_REDIS = "remove{0}FromRedis"
+
+MENU_MERCHANT = "MERCHANT"
+MENU_ORDER = "ORDER"
+MENU_OFFICIAL_BRANDS = "OFFICIAL BRANDS"
+MENU_MASTER_BRANDS = "MASTER BRANDS"
+MENU_CATEGORY = "CATEGORY"
+MENU_PROMO = "PROMO"
+MENU_STATICS = "STATICS"
+MENU_SEO_REDIRECTION = "SEO REDIRECTION"
+MENU_MENUS = "MENU"
+
+PERMISSION_VIEW = "VIEW"
+PERMISSION_ADD = "ADD"
+PERMISSION_DELETE = "DELETE"
+PERMISSION_EDIT = "EDIT"
+PERMISSION_RETRY_SO = "RETRY SO"
+PERMISSION_EXPORT = "EXPORT"
+PERMISSION_REJECT = "REJECT"
+
+DEFAULT_ROLE = "GUEST"
+
+WORKER_TASK_FAILED = "FAILED"
+WORKER_TASK_SUCCESS = "SUCCESS"
+
+DEPRECATED_REASON_FIELD = "This attribute is deprecated. use `{0}` instead of `{1}`"
+
+REGEX_ALPHA_SPACE = '^[a-zA-z]+([\s][a-zA-Z]+)*$'
+
+PRODUK_LOKAL = "PRODUK LOKAL"
+BANGGA_BUATAN_INDONESIA = "Bangga Buatan Indonesia"
+
+BULK_STATE_CREATE = "CREATE"
+BULK_STATE_UPDATE = "UPDATE"
+BULK_STATE_SPECIAL_PRICE = "SPECIAL_PRICE"
+BULK_STATE_WHOLESALE_PRICE = "WHOLESALE_PRICE"
+
+DUMMY_PASSWORD = 'Bhinneka321'
